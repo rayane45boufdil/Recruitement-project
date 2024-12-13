@@ -1,0 +1,228 @@
+/* Conteneur principal */
+.cv-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centre verticalement */
+  min-height: 100vh; /* Prend toute la hauteur de l'écran */
+  background: linear-gradient(
+    90deg,
+    #00264d,
+    #121212,
+    #00264d
+  ); /* Dégradé bleu foncé et noir */
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff; /* Texte blanc pour contraste */
+  overflow: hidden; /* Empêche le débordement */
+}
+ 
+/* Titre principal */
+.cv-uploader h1 {
+  margin-bottom: 40px;
+  font-size: 2.8rem;
+  color: #29b6f6; /* Bleu clair pour attirer l'attention */
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre pour un effet éclatant */
+}
+ 
+/* Conteneur du formulaire */
+.form-container {
+  background: #1e1e1e; /* Fond gris foncé */
+  padding: 30px 40px;
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Ombre subtile */
+  text-align: center;
+  max-width: 500px; /* Taille maximale du cadre */
+  width: 100%;
+}
+ 
+/* Icône du robot */
+.robot-container {
+  margin-bottom: 20px;
+}
+ 
+.robot-icon {
+  font-size: 6rem; /* Grande taille du robot */
+  color: #ff8f00; /* Orange vif pour le robot */
+  animation: bounce 1.5s infinite; /* Animation pour l'icône */
+}
+ 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+ 
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ 
+form input[type="file"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #424242;
+  font-size: 1rem;
+  background-color: #292929;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+ 
+form input[type="file"]:hover {
+  border-color: #29b6f6;
+  background-color: #424242;
+}
+ 
+form button {
+  padding: 12px 25px;
+  background: #29b6f6;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+form button:hover {
+  background-color: #039be5;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(41, 182, 246, 0.5); /* Ombre lumineuse */
+}
+ 
+/* Colonne droite */
+.right-column {
+  flex: 2;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+ 
+.result-section h2 {
+  font-size: 1.8rem;
+  color: #29b6f6; /* Bleu clair pour les titres */
+  margin-bottom: 15px;
+}
+ 
+.result-section ul {
+  list-style: none;
+  padding: 0;
+}
+ 
+.result-section ul li {
+  background: #292929;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #e0e0e0; /* Gris clair */
+}
+ 
+/* Histogramme */
+.histogram {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+  background: #292929; /* Fond gris foncé */
+  padding: 20px;
+  border-radius: 10px;
+}
+ 
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: 0 5px;
+}
+ 
+.bar {
+  width: 40px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #29b6f6, #039be5); /* Gradient bleu */
+  transition: height 0.5s ease-in-out;
+}
+ 
+.bar-label {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #e0e0e0; /* Gris clair */
+}
+/* Conteneur principal */
+.cv-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centre verticalement */
+  min-height: 100vh; /* Prend toute la hauteur de l'écran */
+  background: linear-gradient(
+    90deg,
+    #00264d 0%,
+    #121212 50%,
+    #00264d 100%
+  ); /* Dégradé couvrant toute la largeur */
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff; /* Texte blanc pour contraste */
+  width: 100%; /* Étend sur toute la largeur */
+  overflow: hidden; /* Empêche le débordement */
+  margin: 0; /* Supprime les marges */
+}
+ 
+/* Titre principal */
+.cv-uploader h1 {
+  margin-bottom: 40px;
+  font-size: 2.8rem;
+  color: #29b6f6; /* Bleu clair pour attirer l'attention */
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre pour un effet éclatant */
+}
+ 
+/* Conteneur du formulaire */
+.form-container {
+  background: #1e1e1e; /* Fond gris foncé */
+  padding: 30px 40px;
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Ombre subtile */
+  text-align: center;
+  max-width: 500px; /* Taille maximale du cadre */
+  width: 100%;
+}
+ 
+/* Icône du robot */
+.robot-container {
+  margin-bottom: 20px;
+}
+ 
+.robot-icon {
+  font-size: 6rem; /* Grande taille du robot */
+  color: #ff8f00; /* Orange vif pour le robot */
+  animation: bounce 1.5s infinite; /* Animation pour l'icône */
+}
+ 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+ 
+ 

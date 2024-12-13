@@ -1,0 +1,80 @@
+.about-page {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.about-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #203a43;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.about-mission,
+.about-values {
+  margin-bottom: 30px;
+}
+
+.about-mission h2,
+.about-values h2 {
+  font-size: 2rem;
+  color: #203a43;
+  margin-bottom: 15px;
+}
+
+.about-mission p,
+.about-values ul {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-values li {
+  margin-bottom: 10px;
+}
+
+.about-cta {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-cta button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-cta button:hover {
+  background-color: #0056b3;
+}

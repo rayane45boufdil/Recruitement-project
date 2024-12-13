@@ -1,0 +1,124 @@
+/* Page principale */
+.application-page {
+  max-width: 700px; /* Plus large pour un look aéré */
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f2f7fc
+  ); /* Fond lumineux avec un dégradé subtil */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+ 
+/* Titre principal */
+.application-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #003366; /* Bleu foncé élégant */
+  font-weight: 700;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+ 
+/* Formulaire */
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacement uniforme entre les champs */
+}
+ 
+/* Groupes de champs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.form-group label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+ 
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2); /* Effet lumineux au focus */
+  outline: none;
+}
+ 
+/* Champ de texte spécifique */
+.form-group textarea {
+  height: 120px;
+  resize: vertical; /* Permet de redimensionner verticalement */
+}
+ 
+/* Bouton de soumission */
+.submit-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Dégradé dynamique */
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre lumineuse */
+}
+ 
+.submit-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #0056b3,
+    #003d7f
+  ); /* Couleur plus intense au survol */
+  transform: scale(1.05); /* Zoom léger */
+  box-shadow: 0 6px 12px rgba(0, 91, 191, 0.3);
+}
+ 
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+ 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .application-page {
+    padding: 20px;
+  }
+ 
+  .application-page h1 {
+    font-size: 2rem;
+  }
+ 
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+ 
+  .submit-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+ 
+ 

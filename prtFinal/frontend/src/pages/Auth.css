@@ -1,0 +1,75 @@
+/* Conteneur principal */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #000, #333);
+  color: white;
+}
+
+/* Carte centrale */
+.auth-card {
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-card label {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.auth-card input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-card button {
+  padding: 12px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-card button:hover {
+  background-color: #444;
+}
+
+.auth-card a {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.auth-card a:hover {
+  color: #444;
+}
+
+/* Texte sous le formulaire */
+.auth-card p {
+  font-size: 0.9rem;
+  color: #777;
+}

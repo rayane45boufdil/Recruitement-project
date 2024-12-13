@@ -1,0 +1,92 @@
+/* Job Details Container */
+.job-details {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #ffffff, #f0f8ff);
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 123, 255, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+ 
+/* Title */
+.job-details h1 {
+  text-align: center;
+  color: #00264d; /* Deep blue */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+/* Job Description Paragraph */
+.job-details p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+}
+ 
+/* Button Styles */
+.job-details button {
+  display: block;
+  margin: 30px auto 10px auto;
+  padding: 12px 25px;
+  background: linear-gradient(120deg, #007bff, #0056b3);
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+ 
+/* Hover Effect */
+.job-details button:hover {
+  background: linear-gradient(120deg, #0056b3, #003366);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+}
+ 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .job-details {
+    padding: 20px;
+    margin: 20px;
+  }
+ 
+  .job-details h1 {
+    font-size: 2rem;
+  }
+ 
+  .job-details p {
+    font-size: 1rem;
+  }
+ 
+  .job-details button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+ 
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+ 
